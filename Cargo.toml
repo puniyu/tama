@@ -1,0 +1,20 @@
+[workspace]
+members = ["crates/*"]
+resolver = "2"
+
+[workspace.lints.clippy]
+unwrap_used = "deny"
+
+[workspace.package]
+authors = ["wuliya <3369906077@qq.com>"]
+license = "LGPL-3.0-only"
+readme = "README.md"
+homepage = "https://github.com/puniyu/tama"
+repository = "https://github.com/puniyu/tama"
+edition = "2024"
+rust-version = "1.88.0"
+
+[workspace.dependencies]
+tama_core = { version = "0.1.0", path = "./crates/tama_core" }
+thiserror = "2"
+

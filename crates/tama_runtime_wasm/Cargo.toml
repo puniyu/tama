@@ -1,0 +1,18 @@
+[package]
+name = "tama_runtime_wasm"
+description = "基于 wasmtime 的 WebAssembly 运行时实现"
+version = "0.1.0"
+authors.workspace = true
+license.workspace = true
+readme.workspace = true
+homepage.workspace = true
+repository.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+tama_core.workspace = true
+wasmtime = "45.0.1"
+
+[lints]
+workspace = true
